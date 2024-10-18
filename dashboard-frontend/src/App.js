@@ -36,7 +36,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.get('http://localhost:5000/api/data', {
+      const response = await axios.get('https://data-visualisation-dashboard-backend-xbof.onrender.com', {
         params: { ...filters, page, limit: 10 },
       });
       setFilteredData(response.data.data);
