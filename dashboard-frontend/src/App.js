@@ -36,7 +36,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.get('https://data-visualisation-dashboard-backend-xbof.onrender.com', {
+      const response = await axios.get('https://data-visualisation-dashboard-backend-u5uy.onrender.com', {
         params: { ...filters, page, limit: 10 },
       });
       setFilteredData(response.data.data);
