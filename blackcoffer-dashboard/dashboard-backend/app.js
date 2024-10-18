@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const DataModel = require('./dashboarddatamodel');  // Adjust the path as necessary
+require('dotenv').config();
+
 
 const app = express();
 
