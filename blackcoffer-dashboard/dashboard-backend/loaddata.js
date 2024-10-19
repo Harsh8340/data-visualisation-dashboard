@@ -4,7 +4,7 @@ const path = require('path');
 const DataModel = require('./dashboarddatamodel');  // Adjust the path as necessary
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/dashboard_db', {})
+mongoose.connect('mongodb+srv://harshkushwaha159:RgEOdoKTGDrp7r8P@cluster0.d1taq.mongodb.net/dashboard_db?retryWrites=true&w=majority', {})
   .then(() => console.log('MongoDB connected'))
   .catch(err => {
     console.error('Error connecting to MongoDB:', err);
